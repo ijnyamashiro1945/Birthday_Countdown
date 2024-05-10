@@ -23,6 +23,7 @@ const weekdays = [
   "Saturday",
 ];
 
+// connected to class value
 const sisawaktu = document.querySelector(".sisawaktu");
 const formatTime = document.querySelectorAll(".format h4");
 
