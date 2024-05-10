@@ -1,0 +1,169 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Freeman", sans-serif;
+  background-image: url("images/Takao_class.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 5rem auto;
+  max-width: 1170px;
+}
+
+.card {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-align: center;
+  margin: auto;
+  margin-top: 20%;
+  margin-bottom: 7%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0.7;
+  border-radius: 20px;
+  transition: all 0.3 ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.card h1 {
+  font-size: 30px;
+}
+
+.card-footer {
+  margin: 10rem auto;
+  max-width: 1000px;
+  color: black;
+  max-width: 300px;
+  text-align: center;
+  font-size: 10px;
+  margin: auto;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0.7;
+  border-radius: 20px;
+  box-shadow: 4px 4px 6px #1d1d1d59;
+}
+
+.card-footer a {
+  text-decoration: none;
+  color: crimson;
+  transition: 0.2s ease-in;
+}
+
+.card-footer a:hover {
+  color: #ff0033;
+  text-decoration: underline;
+}
+
+.card-footer h1 {
+  font-size: 18px;
+}
+
+h1,
+h4 {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 2;
+  font-family: "Freeman", sans-serif;
+}
+
+.text {
+  padding-bottom: 15px;
+}
+
+.sisawaktu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.format h4 {
+  font-size: 25px;
+
+}
+
+.countdown h4:not(.expired) {
+  font-size: 1rem;
+}
+
+.format {
+  place-items: center;
+  width: 5rem;
+  height: 5rem;
+  border: 0.5rem;
+  border-color: black;
+  border: 2px solid #333;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.format span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  margin: -2px;
+}
+
+/*Responsive Iphone 12 Pro*/
+@media only screen and (max-width: 390px) {
+  body {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .section-center {
+    margin-bottom: 340px;
+  }
+
+  .card {
+    margin-top: 30%;
+    width: 85%;
+    backdrop-filter: blur(10px);
+  }
+
+  .card h1 {
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .format h4 {
+    font-size: 20px;
+  }
+
+  .format {
+    width: 4 rem;
+    height: 4rem;
+    margin: 2px;
+  }
+
+  .format span {
+    font-size: 8px;
+  }
+}
